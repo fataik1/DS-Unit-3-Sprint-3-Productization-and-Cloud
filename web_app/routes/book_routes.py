@@ -3,7 +3,7 @@ from flask import Blueprint, jsonify, request, render_template #, flash, redirec
 book_routes = Blueprint("book_routes", __name__)
 
 @book_routes.route("/books.json")
-@book_routes.route("/books_endpoint")
+@book_routes.route("/books.endpoint")
 def list_books():
     books = [
         {"id": 1, "title": "Book 1"},
